@@ -1,14 +1,26 @@
 This bolierplate contains
-CakePHP 4.x, Vuejs 3, cakephp/twig-view
+ * CakePHP 4.x
+ * Vuejs 3
+ * cakephp/twig-view
 
 Running the application
+```bash
 docker-compose up
+```
 
 Install npm libraries
-npm install
+```bash
+$ cd app/
+$ npm install
+```
 
 Compile Vue application
-npm run development
+```
+$ cd app/
+$ npm run development
+```
 
 Test your environment
-http://127.0.0.1:9090/home/index
+```
+Open your browser, head to http://127.0.0.1:9090/home/index
+```
