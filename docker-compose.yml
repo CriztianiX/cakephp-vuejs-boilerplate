@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  app:
+    build: .
+    ports:
+      - "9090:80"
+    volumes:
+      - ./app:/var/www/html/
+    environment:
+      SECURITY_SALT: qazxswqazxswedcxsdewvcbgd53gd6$ha.Dkh%%
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_DATABASE: cakephp-app
+      MYSQL_ROOT_PASSWORD: cakephp-app
+
